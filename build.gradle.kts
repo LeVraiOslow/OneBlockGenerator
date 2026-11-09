@@ -8,12 +8,18 @@ version = "1.0.0"
 repositories {
     mavenCentral()
     maven("https://repo.papermc.io/repository/maven-public/")
+    maven("https://jitpack.io")                              // VaultAPI
+    maven("https://repo.extendedclip.com/releases/")         // PlaceholderAPI
+    maven("https://repo.bg-software.com/repository/api/")    // SuperiorSkyblock2
 }
 
 dependencies {
     compileOnly("io.papermc.paper:paper-api:26.2.build.+")
-    // Copie ici les jars de ton serveur : Vault, SuperiorSkyblock2, PlaceholderAPI.
+    compileOnly("com.github.MilkBowl:VaultAPI:1.7")
+    compileOnly("me.clip:placeholderapi:2.11.6")
+    compileOnly("com.bgsoftware:SuperiorSkyblockAPI:2024.4")
     // Nexo, EssentialsX et RoseStacker sont appeles par reflexion, sans dependance de compilation.
+    // Jars optionnels supplementaires : depose-les dans libs/ (en local uniquement).
     compileOnly(fileTree("libs") { include("*.jar") })
 }
 

@@ -25,4 +25,4 @@ Vérifie en premier `engine.item` dans `config.yml` : il doit pointer vers l'ide
 
 ## Compiler
 
-JDK 25. Copie les jars de Vault, SuperiorSkyblock2 et PlaceholderAPI dans `libs/`, puis `gradle build`.
+JDK 25, puis `gradle build`. Vault, SuperiorSkyblock2 et PlaceholderAPI sont téléchargés automatiquement via Maven (aucun jar à copier). Le jar est généré dans `build/libs/`.
