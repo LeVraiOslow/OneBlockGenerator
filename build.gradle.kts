@@ -15,9 +15,9 @@ repositories {
 
 dependencies {
     compileOnly("io.papermc.paper:paper-api:26.2.build.+")
-    compileOnly("com.github.MilkBowl:VaultAPI:1.7")
-    compileOnly("me.clip:placeholderapi:2.11.6")
-    compileOnly("com.bgsoftware:SuperiorSkyblockAPI:2024.4")
+    compileOnly("com.github.MilkBowl:VaultAPI:1.7") { isTransitive = false }
+    compileOnly("me.clip:placeholderapi:2.11.6") { isTransitive = false }
+    compileOnly("com.bgsoftware:SuperiorSkyblockAPI:2024.4") { isTransitive = false }
     // Nexo, EssentialsX et RoseStacker sont appeles par reflexion, sans dependance de compilation.
     // Jars optionnels supplementaires : depose-les dans libs/ (en local uniquement).
     compileOnly(fileTree("libs") { include("*.jar") })
