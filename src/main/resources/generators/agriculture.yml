@@ -1,0 +1,201 @@
+# Cultures et nourriture.
+
+wheat:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ʙʟᴇs"
+  ingredient: WHEAT
+  block: HAY_BLOCK
+  unlock-price: 1000
+  cost-multiplier: 1
+  production:
+    items: {WHEAT: 1}
+    money: 1
+
+carrot:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴄᴀʀᴏᴛᴛᴇs"
+  ingredient: CARROT
+  block: ORANGE_TERRACOTTA
+  unlock-price: 1000
+  cost-multiplier: 1
+  production:
+    items: {CARROT: 1}
+    money: 1
+
+potato:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴘᴀᴛᴀᴛᴇs"
+  ingredient: POTATO
+  block: TERRACOTTA
+  unlock-price: 1000
+  cost-multiplier: 1
+  production:
+    items: {POTATO: 1}
+    money: 1
+
+beetroot:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ʙᴇᴛᴛᴇʀᴀᴠᴇs"
+  ingredient: BEETROOT
+  block: RED_TERRACOTTA
+  unlock-price: 1000
+  cost-multiplier: 1
+  production:
+    items: {BEETROOT: 1}
+    money: 1
+
+melon:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴘᴀsᴛᴇqᴜᴇs"
+  ingredient: MELON_SLICE
+  block: MELON
+  unlock-price: 2500
+  cost-multiplier: 1.5
+  production:
+    items: {MELON_SLICE: 1}
+    money: 1.5
+
+pumpkin:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴄɪᴛʀᴏᴜɪʟʟᴇs"
+  ingredient: PUMPKIN
+  block: PUMPKIN
+  unlock-price: 2500
+  cost-multiplier: 1.5
+  production:
+    items: {PUMPKIN: 1}
+    money: 1.5
+
+sugar_cane:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴄᴀɴɴᴇs ᴀ sᴜᴄʀᴇ"
+  ingredient: SUGAR_CANE
+  block: BAMBOO_BLOCK
+  unlock-price: 2500
+  cost-multiplier: 1.5
+  production:
+    items: {SUGAR_CANE: 1}
+    money: 1.5
+
+cactus:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴄᴀᴄᴛᴜs"
+  ingredient: CACTUS
+  block: MOSS_BLOCK
+  unlock-price: 2500
+  cost-multiplier: 1.5
+  production:
+    items: {CACTUS: 1}
+    money: 1.5
+
+bamboo:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ʙᴀᴍʙᴏᴏ"
+  ingredient: BAMBOO
+  block: BAMBOO_BLOCK
+  unlock-price: 2500
+  cost-multiplier: 1.5
+  production:
+    items: {BAMBOO: 1}
+    money: 1.5
+
+kelp:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴀʟɢᴜᴇs"
+  ingredient: KELP
+  block: DRIED_KELP_BLOCK
+  unlock-price: 2500
+  cost-multiplier: 1.5
+  production:
+    items: {KELP: 1}
+    money: 1.5
+
+apple:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴘᴏᴍᴍᴇs"
+  ingredient: APPLE
+  block: RED_WOOL
+  unlock-price: 5000
+  cost-multiplier: 2
+  production:
+    items: {APPLE: 1}
+    money: 2
+
+sweet_berries:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ʙᴀɪᴇs sᴜᴄʀᴇᴇs"
+  ingredient: SWEET_BERRIES
+  block: RED_CONCRETE
+  unlock-price: 5000
+  cost-multiplier: 2
+  production:
+    items: {SWEET_BERRIES: 1}
+    money: 2
+
+cocoa:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴄᴀᴄᴀᴏ"
+  ingredient: COCOA_BEANS
+  block: BROWN_TERRACOTTA
+  unlock-price: 5000
+  cost-multiplier: 2
+  production:
+    items: {COCOA_BEANS: 1}
+    money: 2
+
+red_mushroom:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴄʜᴀᴍᴘɪɢɴᴏɴs ʀᴏᴜɢᴇs"
+  ingredient: RED_MUSHROOM
+  block: RED_MUSHROOM_BLOCK
+  unlock-price: 5000
+  cost-multiplier: 2
+  production:
+    items: {RED_MUSHROOM: 1}
+    money: 2
+
+brown_mushroom:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴄʜᴀᴍᴘɪɢɴᴏɴs ᴍᴀʀʀᴏɴs"
+  ingredient: BROWN_MUSHROOM
+  block: BROWN_MUSHROOM_BLOCK
+  unlock-price: 5000
+  cost-multiplier: 2
+  production:
+    items: {BROWN_MUSHROOM: 1}
+    money: 2
+
+nether_wart:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴠᴇʀʀᴜᴇs ᴅᴜ ɴᴇᴛʜᴇʀ"
+  ingredient: NETHER_WART
+  block: NETHER_WART_BLOCK
+  unlock-price: 10000
+  cost-multiplier: 3
+  production:
+    items: {NETHER_WART: 1}
+    money: 3
+
+egg:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴏᴇᴜғs"
+  ingredient: EGG
+  block: BONE_BLOCK
+  unlock-price: 5000
+  cost-multiplier: 2
+  production:
+    items: {EGG: 1}
+    money: 2
+
+honey:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴍɪᴇʟs"
+  ingredient: HONEY_BOTTLE
+  block: HONEY_BLOCK
+  unlock-price: 20000
+  cost-multiplier: 4
+  production:
+    items: {HONEY_BOTTLE: 1}
+    money: 4
+
+golden_carrot:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴄᴀʀᴏᴛᴛᴇs ᴇɴ ᴏʀ"
+  ingredient: GOLDEN_CARROT
+  block: GOLD_BLOCK
+  unlock-price: 250000
+  cost-multiplier: 15
+  production:
+    items: {GOLDEN_CARROT: 1}
+    money: 15
+
+golden_apple:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴘᴏᴍᴍᴇs ᴇɴ ᴏʀ"
+  ingredient: GOLDEN_APPLE
+  block: GOLD_BLOCK
+  unlock-price: 500000
+  cost-multiplier: 25
+  production:
+    items: {GOLDEN_APPLE: 1}
+    money: 25

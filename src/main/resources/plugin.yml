@@ -1,0 +1,15 @@
+name: ObGenerator
+version: '${version}'
+main: fr.obgenerator.ObGenerator
+api-version: '26.2'
+folia-supported: true
+description: Generateurs tycoon a ameliorer (blocs, cultures, mobs, XP).
+author: ObGenerator
+softdepend: [Vault, Nexo, SuperiorSkyblock2, Essentials, RoseStacker, PlaceholderAPI]
+permissions:
+  obgenerator.admin:
+    description: Commandes admin, acces a tous les generateurs, limites ignorees
+    default: op
+  obgenerator.craft:
+    description: Fabriquer des generateurs
+    default: true

@@ -1,0 +1,149 @@
+# Progression partagee par les générateurs. Un générateur la choisit avec "profile: standard"
+# et peut remplacer n'importe quelle valeur dans sa section "levels" (voir generators/blocs.yml).
+#
+# interval : temps entre deux cycles
+# amount   : multiplicateur des items et mobs produits
+# money    : multiplicateur de la monnaie
+# xp       : multiplicateur de l'XP
+# capacity : stock maximum (items, ou cycles pour un générateur sans item)
+#
+# Exigences d'amélioration, stockees sous upgrade.requirements :
+#   type ITEM        : item, amount. {product} = ressource du générateur, {ingredient} = ressource de son craft
+#                      Accepte aussi nexo:mon_item, spawner:ZOMBIE et engine (le Moteur)
+#   type MONEY       : amount, multiplie par cost-multiplier du générateur
+#   type XP          : amount en niveaux
+#   type PLAYTIME    : amount en duree (non consomme)
+#   type STATISTIC   : statistic (MOB_KILLS, ...), amount (non consomme)
+#   type PERMISSION  : permission
+#   type PLACEHOLDER : placeholder (%...%), amount
+# Options : slot, label, scale (multiplie aussi par cost-multiplier), icon (material, name, lore).
+profiles:
+  standard:
+    levels:
+      1: {interval: 60s, amount: 1, money: 1, xp: 1, capacity: 128}
+      2:
+        interval: 55s
+        amount: 2
+        money: 2
+        xp: 2
+        capacity: 256
+        upgrade:
+          duration: 5m
+          requirements:
+            ressource: {type: ITEM, item: "{product}", amount: 128, scale: false}
+            moteur: {type: ITEM, item: engine, amount: 1}
+            monnaie: {type: MONEY, amount: 250000}
+            xp: {type: XP, amount: 100}
+            temps: {type: PLAYTIME, amount: 20h}
+      3:
+        interval: 50s
+        amount: 5
+        money: 5
+        xp: 5
+        capacity: 384
+        upgrade:
+          duration: 15m
+          requirements:
+            ressource: {type: ITEM, item: "{product}", amount: 256}
+            moteur: {type: ITEM, item: engine, amount: 1}
+            monnaie: {type: MONEY, amount: 500000}
+            xp: {type: XP, amount: 150}
+            temps: {type: PLAYTIME, amount: 30h}
+      4:
+        interval: 45s
+        amount: 10
+        money: 10
+        xp: 10
+        capacity: 512
+        upgrade:
+          duration: 30m
+          requirements:
+            ressource: {type: ITEM, item: "{product}", amount: 512}
+            moteur: {type: ITEM, item: engine, amount: 2}
+            monnaie: {type: MONEY, amount: 750000}
+            xp: {type: XP, amount: 200}
+            temps: {type: PLAYTIME, amount: 40h}
+      5:
+        interval: 40s
+        amount: 15
+        money: 15
+        xp: 15
+        capacity: 768
+        upgrade:
+          duration: 1h
+          requirements:
+            ressource: {type: ITEM, item: "{product}", amount: 1024}
+            moteur: {type: ITEM, item: engine, amount: 2}
+            monnaie: {type: MONEY, amount: 1000000}
+            xp: {type: XP, amount: 250}
+            temps: {type: PLAYTIME, amount: 50h}
+      6:
+        interval: 35s
+        amount: 20
+        money: 20
+        xp: 20
+        capacity: 1024
+        upgrade:
+          duration: 2h
+          requirements:
+            ressource: {type: ITEM, item: "{product}", amount: 2048}
+            moteur: {type: ITEM, item: engine, amount: 3}
+            monnaie: {type: MONEY, amount: 1500000}
+            xp: {type: XP, amount: 300}
+            temps: {type: PLAYTIME, amount: 60h}
+      7:
+        interval: 30s
+        amount: 25
+        money: 25
+        xp: 25
+        capacity: 1536
+        upgrade:
+          duration: 4h
+          requirements:
+            ressource: {type: ITEM, item: "{product}", amount: 4096}
+            moteur: {type: ITEM, item: engine, amount: 3}
+            monnaie: {type: MONEY, amount: 2000000}
+            xp: {type: XP, amount: 350}
+            temps: {type: PLAYTIME, amount: 70h}
+      8:
+        interval: 25s
+        amount: 30
+        money: 30
+        xp: 30
+        capacity: 2048
+        upgrade:
+          duration: 8h
+          requirements:
+            ressource: {type: ITEM, item: "{product}", amount: 8192}
+            moteur: {type: ITEM, item: engine, amount: 4}
+            monnaie: {type: MONEY, amount: 3000000}
+            xp: {type: XP, amount: 400}
+            temps: {type: PLAYTIME, amount: 80h}
+      9:
+        interval: 20s
+        amount: 35
+        money: 35
+        xp: 35
+        capacity: 3072
+        upgrade:
+          duration: 16h
+          requirements:
+            ressource: {type: ITEM, item: "{product}", amount: 16384}
+            moteur: {type: ITEM, item: engine, amount: 4}
+            monnaie: {type: MONEY, amount: 4000000}
+            xp: {type: XP, amount: 450}
+            temps: {type: PLAYTIME, amount: 90h}
+      10:
+        interval: 15s
+        amount: 40
+        money: 40
+        xp: 40
+        capacity: 4096
+        upgrade:
+          duration: 24h
+          requirements:
+            ressource: {type: ITEM, item: "{product}", amount: 32768}
+            moteur: {type: ITEM, item: engine, amount: 5}
+            monnaie: {type: MONEY, amount: 5000000}
+            xp: {type: XP, amount: 500}
+            temps: {type: PLAYTIME, amount: 100h}

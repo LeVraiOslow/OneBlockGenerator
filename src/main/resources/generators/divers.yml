@@ -1,0 +1,72 @@
+# Experience et ressources de mobs sans mob.
+
+xp:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴇxᴘᴇʀɪᴇɴᴄᴇs"
+  ingredient: EXPERIENCE_BOTTLE
+  block: ENCHANTING_TABLE
+  unlock-price: 20000
+  cost-multiplier: 4
+  upgrade-item: EXPERIENCE_BOTTLE
+  production:
+    money: 1
+    xp: 25
+
+ender_pearl:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴇɴᴅᴇʀᴘᴇʀʟᴇs"
+  ingredient: ENDER_PEARL
+  block: END_STONE_BRICKS
+  unlock-price: 200000
+  cost-multiplier: 12
+  production:
+    items: {ENDER_PEARL: 1}
+    money: 12
+
+blaze_rod:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ʙʟᴀᴢᴇs ʀᴏᴅ"
+  ingredient: BLAZE_ROD
+  block: SHROOMLIGHT
+  unlock-price: 200000
+  cost-multiplier: 12
+  production:
+    items: {BLAZE_ROD: 1}
+    money: 12
+
+slime_ball:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ sʟɪᴍᴇʙᴀʟʟ"
+  ingredient: SLIME_BALL
+  block: SLIME_BLOCK
+  unlock-price: 50000
+  cost-multiplier: 5
+  production:
+    items: {SLIME_BALL: 1}
+    money: 5
+
+string:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ғɪʟs"
+  ingredient: STRING
+  block: WHITE_WOOL
+  unlock-price: 5000
+  cost-multiplier: 2
+  production:
+    items: {STRING: 1}
+    money: 2
+
+gunpowder:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ɢᴜɴᴘᴏᴡᴅᴇʀ"
+  ingredient: GUNPOWDER
+  block: GRAY_CONCRETE
+  unlock-price: 10000
+  cost-multiplier: 3
+  production:
+    items: {GUNPOWDER: 1}
+    money: 3
+
+bone:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴏs"
+  ingredient: BONE
+  block: BONE_BLOCK
+  unlock-price: 5000
+  cost-multiplier: 2
+  production:
+    items: {BONE: 1}
+    money: 2

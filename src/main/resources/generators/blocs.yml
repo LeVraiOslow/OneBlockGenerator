@@ -1,0 +1,414 @@
+# Une entrée = un générateur. Ajoute autant de fichiers .yml que tu veux dans ce dossier.
+#
+# name            nom de l'item et de l'hologramme
+# ingredient      ressource placee 8 fois autour du Moteur : STONE, nexo:mon_item, spawner:ZOMBIE
+#                 Pour un autre motif :
+#                   recipe:
+#                     shape: ["ABA", "BMB", "ABA"]
+#                     ingredients: {A: DIAMOND, B: nexo:mon_item, M: engine}
+# block           bloc pose : STONE ou nexo:mon_bloc (les meubles Nexo ne sont pas geres)
+# item            item en main, par défaut le même que block
+# unlock-price    prix du déverrouillage
+# cost-multiplier multiplie les couts en monnaie de profiles.yml
+# upgrade-item    remplace {product} dans les exigences d'amélioration
+# profile         progression dans profiles.yml (défaut : standard)
+# menu            menu dans menus.yml (défaut : default)
+# permission      permission pour le fabriquer
+# production
+#   items         items produits par cycle au niveau 1
+#   mobs          mobs apparaissant à chaque cycle
+#   money         monnaie par cycle au niveau 1
+#   xp            points d'XP par cycle au niveau 1
+#   commands      commandes console à chaque cycle ({owner}, {level})
+#   delivery      STORAGE (défaut, à récupérer) ou DROP (items au sol)
+# hologram        lignes propres : locked, running, full, upgrading
+# levels          remplace des valeurs du profil pour ce générateur :
+#   levels:
+#     10:
+#       interval: 10s
+#       items: {STONE: 50, COBBLESTONE: 10}
+#       money-value: 500
+#       upgrade:
+#         duration: 2d
+#         requirements:
+#           special: {type: ITEM, item: nexo:cle_rare, amount: 1}
+
+stone:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ sᴛᴏɴᴇ"
+  ingredient: STONE
+  block: STONE
+  unlock-price: 1000
+  cost-multiplier: 1
+  production:
+    items: {STONE: 1}
+    money: 1
+
+cobblestone:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴄᴏʙʙʟᴇsᴛᴏɴᴇ"
+  ingredient: COBBLESTONE
+  block: COBBLESTONE
+  unlock-price: 1000
+  cost-multiplier: 1
+  production:
+    items: {COBBLESTONE: 1}
+    money: 1
+
+andesite:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴀɴᴅᴇsɪᴛᴇ"
+  ingredient: ANDESITE
+  block: ANDESITE
+  unlock-price: 1000
+  cost-multiplier: 1
+  production:
+    items: {ANDESITE: 1}
+    money: 1
+
+diorite:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴅɪᴏʀɪᴛᴇ"
+  ingredient: DIORITE
+  block: DIORITE
+  unlock-price: 1000
+  cost-multiplier: 1
+  production:
+    items: {DIORITE: 1}
+    money: 1
+
+granite:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ɢʀᴀɴɪᴛᴇ"
+  ingredient: GRANITE
+  block: GRANITE
+  unlock-price: 1000
+  cost-multiplier: 1
+  production:
+    items: {GRANITE: 1}
+    money: 1
+
+deepslate:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴅᴇᴇᴘsʟᴀᴛᴇ"
+  ingredient: DEEPSLATE
+  block: DEEPSLATE
+  unlock-price: 2500
+  cost-multiplier: 1.5
+  production:
+    items: {DEEPSLATE: 1}
+    money: 1.5
+
+tuff:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴛᴜғғ"
+  ingredient: TUFF
+  block: TUFF
+  unlock-price: 2500
+  cost-multiplier: 1.5
+  production:
+    items: {TUFF: 1}
+    money: 1.5
+
+calcite:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴄᴀʟᴄɪᴛᴇ"
+  ingredient: CALCITE
+  block: CALCITE
+  unlock-price: 2500
+  cost-multiplier: 1.5
+  production:
+    items: {CALCITE: 1}
+    money: 1.5
+
+dirt:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴛᴇʀʀᴇ"
+  ingredient: DIRT
+  block: DIRT
+  unlock-price: 1000
+  cost-multiplier: 1
+  production:
+    items: {DIRT: 1}
+    money: 1
+
+gravel:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ɢʀᴀᴠɪᴇʀ"
+  ingredient: GRAVEL
+  block: GRAVEL
+  unlock-price: 1000
+  cost-multiplier: 1
+  production:
+    items: {GRAVEL: 1}
+    money: 1
+
+sand:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ sᴀʙʟᴇ"
+  ingredient: SAND
+  block: SAND
+  unlock-price: 1000
+  cost-multiplier: 1
+  production:
+    items: {SAND: 1}
+    money: 1
+
+red_sand:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ sᴀʙʟᴇ ʀᴏᴜɢᴇ"
+  ingredient: RED_SAND
+  block: RED_SAND
+  unlock-price: 1000
+  cost-multiplier: 1
+  production:
+    items: {RED_SAND: 1}
+    money: 1
+
+clay:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴀʀɢɪʟᴇ"
+  ingredient: CLAY
+  block: CLAY
+  unlock-price: 2500
+  cost-multiplier: 1.5
+  production:
+    items: {CLAY: 1}
+    money: 1.5
+
+snow:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ɴᴇɪɢᴇ"
+  ingredient: SNOW_BLOCK
+  block: SNOW_BLOCK
+  unlock-price: 1000
+  cost-multiplier: 1
+  production:
+    items: {SNOW_BLOCK: 1}
+    money: 1
+
+ice:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ɢʟᴀᴄᴇ"
+  ingredient: ICE
+  block: ICE
+  unlock-price: 2500
+  cost-multiplier: 1.5
+  production:
+    items: {ICE: 1}
+    money: 1.5
+
+packed_ice:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ɢʟᴀᴄᴇ ᴄᴏᴍᴘᴀᴄᴛᴇᴇ"
+  ingredient: PACKED_ICE
+  block: PACKED_ICE
+  unlock-price: 10000
+  cost-multiplier: 3
+  production:
+    items: {PACKED_ICE: 1}
+    money: 3
+
+oak_log:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴄʜᴇɴᴇ"
+  ingredient: OAK_LOG
+  block: OAK_LOG
+  unlock-price: 1000
+  cost-multiplier: 1
+  production:
+    items: {OAK_LOG: 1}
+    money: 1
+
+spruce_log:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ sᴀᴘɪɴ"
+  ingredient: SPRUCE_LOG
+  block: SPRUCE_LOG
+  unlock-price: 1000
+  cost-multiplier: 1
+  production:
+    items: {SPRUCE_LOG: 1}
+    money: 1
+
+birch_log:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ʙᴏᴜʟᴇᴀᴜ"
+  ingredient: BIRCH_LOG
+  block: BIRCH_LOG
+  unlock-price: 1000
+  cost-multiplier: 1
+  production:
+    items: {BIRCH_LOG: 1}
+    money: 1
+
+jungle_log:
+  name: "&6Générateur à Acajou"
+  ingredient: JUNGLE_LOG
+  block: JUNGLE_LOG
+  unlock-price: 1000
+  cost-multiplier: 1
+  production:
+    items: {JUNGLE_LOG: 1}
+    money: 1
+
+acacia_log:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴀᴄᴀᴄɪᴀ"
+  ingredient: ACACIA_LOG
+  block: ACACIA_LOG
+  unlock-price: 1000
+  cost-multiplier: 1
+  production:
+    items: {ACACIA_LOG: 1}
+    money: 1
+
+dark_oak_log:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴄʜᴇɴᴇ ɴᴏɪʀ"
+  ingredient: DARK_OAK_LOG
+  block: DARK_OAK_LOG
+  unlock-price: 1000
+  cost-multiplier: 1
+  production:
+    items: {DARK_OAK_LOG: 1}
+    money: 1
+
+mangrove_log:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴘᴀʟᴇᴛᴜᴠɪᴇʀ"
+  ingredient: MANGROVE_LOG
+  block: MANGROVE_LOG
+  unlock-price: 1000
+  cost-multiplier: 1
+  production:
+    items: {MANGROVE_LOG: 1}
+    money: 1
+
+cherry_log:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴄᴇʀɪsɪᴇʀ"
+  ingredient: CHERRY_LOG
+  block: CHERRY_LOG
+  unlock-price: 1000
+  cost-multiplier: 1
+  production:
+    items: {CHERRY_LOG: 1}
+    money: 1
+
+pale_oak_log:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴄʜᴇɴᴇ ᴘᴀʟᴇ"
+  ingredient: PALE_OAK_LOG
+  block: PALE_OAK_LOG
+  unlock-price: 1000
+  cost-multiplier: 1
+  production:
+    items: {PALE_OAK_LOG: 1}
+    money: 1
+
+crimson_stem:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴛɪɢᴇ ᴄᴀʀᴍɪɴ"
+  ingredient: CRIMSON_STEM
+  block: CRIMSON_STEM
+  unlock-price: 5000
+  cost-multiplier: 2
+  production:
+    items: {CRIMSON_STEM: 1}
+    money: 2
+
+warped_stem:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴛɪɢᴇ ʙɪsᴄᴏʀɴᴜᴇ"
+  ingredient: WARPED_STEM
+  block: WARPED_STEM
+  unlock-price: 5000
+  cost-multiplier: 2
+  production:
+    items: {WARPED_STEM: 1}
+    money: 2
+
+netherrack:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ɴᴇᴛʜᴇʀʀᴀᴄᴋ"
+  ingredient: NETHERRACK
+  block: NETHERRACK
+  unlock-price: 2500
+  cost-multiplier: 1.5
+  production:
+    items: {NETHERRACK: 1}
+    money: 1.5
+
+soul_sand:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ sᴀʙʟᴇ ᴅᴇs ᴀᴍᴇs"
+  ingredient: SOUL_SAND
+  block: SOUL_SAND
+  unlock-price: 5000
+  cost-multiplier: 2
+  production:
+    items: {SOUL_SAND: 1}
+    money: 2
+
+basalt:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ʙᴀsᴀʟᴛᴇ"
+  ingredient: BASALT
+  block: BASALT
+  unlock-price: 5000
+  cost-multiplier: 2
+  production:
+    items: {BASALT: 1}
+    money: 2
+
+blackstone:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ʙʟᴀᴄᴋsᴛᴏɴᴇ"
+  ingredient: BLACKSTONE
+  block: BLACKSTONE
+  unlock-price: 5000
+  cost-multiplier: 2
+  production:
+    items: {BLACKSTONE: 1}
+    money: 2
+
+magma:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴍᴀɢᴍᴀ"
+  ingredient: MAGMA_BLOCK
+  block: MAGMA_BLOCK
+  unlock-price: 10000
+  cost-multiplier: 3
+  production:
+    items: {MAGMA_BLOCK: 1}
+    money: 3
+
+glowstone:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ɢʟᴏᴡsᴛᴏɴᴇ"
+  ingredient: GLOWSTONE
+  block: GLOWSTONE
+  unlock-price: 20000
+  cost-multiplier: 4
+  production:
+    items: {GLOWSTONE: 1}
+    money: 4
+
+end_stone:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴘɪᴇʀʀᴇ ᴅᴇ ʟ'ᴇɴᴅ"
+  ingredient: END_STONE
+  block: END_STONE
+  unlock-price: 20000
+  cost-multiplier: 4
+  production:
+    items: {END_STONE: 1}
+    money: 4
+
+prismarine:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴘʀɪsᴍᴀʀɪɴᴇ"
+  ingredient: PRISMARINE
+  block: PRISMARINE
+  unlock-price: 20000
+  cost-multiplier: 4
+  production:
+    items: {PRISMARINE: 1}
+    money: 4
+
+sea_lantern:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ʟᴀɴᴛᴇʀɴᴇ ᴀqᴜᴀᴛɪqᴜᴇ"
+  ingredient: SEA_LANTERN
+  block: SEA_LANTERN
+  unlock-price: 40000
+  cost-multiplier: 6
+  production:
+    items: {SEA_LANTERN: 1}
+    money: 6
+
+obsidian:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴏʙsɪᴅɪᴇɴɴᴇ"
+  ingredient: OBSIDIAN
+  block: OBSIDIAN
+  unlock-price: 75000
+  cost-multiplier: 8
+  production:
+    items: {OBSIDIAN: 1}
+    money: 8
+
+crying_obsidian:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴏʙsɪᴅɪᴇɴɴᴇ ᴘʟᴇᴜʀᴇᴜsᴇ"
+  ingredient: CRYING_OBSIDIAN
+  block: CRYING_OBSIDIAN
+  unlock-price: 150000
+  cost-multiplier: 12
+  production:
+    items: {CRYING_OBSIDIAN: 1}
+    money: 12

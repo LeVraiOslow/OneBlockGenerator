@@ -1,0 +1,178 @@
+# Moteur entouré de 8 spawners du mob. Le mob apparaît au-dessus du générateur à chaque cycle ;
+# upgrade-item est la ressource demandee pour les améliorations.
+
+zombie:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴢᴏᴍʙɪᴇs"
+  ingredient: spawner:ZOMBIE
+  block: LODESTONE
+  unlock-price: 10000
+  cost-multiplier: 2
+  upgrade-item: ROTTEN_FLESH
+  production:
+    mobs: {ZOMBIE: 1}
+    money: 2
+
+skeleton:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ sqᴜᴇʟᴇᴛᴛᴇs"
+  ingredient: spawner:SKELETON
+  block: LODESTONE
+  unlock-price: 10000
+  cost-multiplier: 2
+  upgrade-item: BONE
+  production:
+    mobs: {SKELETON: 1}
+    money: 2
+
+spider:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴀʀᴀɪɢɴᴇᴇs"
+  ingredient: spawner:SPIDER
+  block: LODESTONE
+  unlock-price: 10000
+  cost-multiplier: 2
+  upgrade-item: STRING
+  production:
+    mobs: {SPIDER: 1}
+    money: 2
+
+creeper:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴄʀᴇᴇᴘᴇʀs"
+  ingredient: spawner:CREEPER
+  block: LODESTONE
+  unlock-price: 20000
+  cost-multiplier: 3
+  upgrade-item: GUNPOWDER
+  production:
+    mobs: {CREEPER: 1}
+    money: 3
+
+cow:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴠᴀᴄʜᴇs"
+  ingredient: spawner:COW
+  block: LODESTONE
+  unlock-price: 10000
+  cost-multiplier: 2
+  upgrade-item: LEATHER
+  production:
+    mobs: {COW: 1}
+    money: 2
+
+pig:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴄᴏᴄʜᴏɴs"
+  ingredient: spawner:PIG
+  block: LODESTONE
+  unlock-price: 10000
+  cost-multiplier: 2
+  upgrade-item: PORKCHOP
+  production:
+    mobs: {PIG: 1}
+    money: 2
+
+sheep:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴍᴏᴜᴛᴏɴs"
+  ingredient: spawner:SHEEP
+  block: LODESTONE
+  unlock-price: 10000
+  cost-multiplier: 2
+  upgrade-item: WHITE_WOOL
+  production:
+    mobs: {SHEEP: 1}
+    money: 2
+
+chicken:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴘᴏᴜʟᴇs"
+  ingredient: spawner:CHICKEN
+  block: LODESTONE
+  unlock-price: 10000
+  cost-multiplier: 2
+  upgrade-item: FEATHER
+  production:
+    mobs: {CHICKEN: 1}
+    money: 2
+
+slime:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ sʟɪᴍᴇs"
+  ingredient: spawner:SLIME
+  block: LODESTONE
+  unlock-price: 30000
+  cost-multiplier: 4
+  upgrade-item: SLIME_BALL
+  production:
+    mobs: {SLIME: 1}
+    money: 4
+
+witch:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ sᴏʀᴄɪᴇʀᴇs"
+  ingredient: spawner:WITCH
+  block: LODESTONE
+  unlock-price: 50000
+  cost-multiplier: 5
+  upgrade-item: GLASS_BOTTLE
+  production:
+    mobs: {WITCH: 1}
+    money: 5
+
+enderman:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴇɴᴅᴇʀᴍᴀɴs"
+  ingredient: spawner:ENDERMAN
+  block: LODESTONE
+  unlock-price: 150000
+  cost-multiplier: 10
+  upgrade-item: ENDER_PEARL
+  production:
+    mobs: {ENDERMAN: 1}
+    money: 10
+
+blaze:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ʙʟᴀᴢᴇs"
+  ingredient: spawner:BLAZE
+  block: LODESTONE
+  unlock-price: 150000
+  cost-multiplier: 10
+  upgrade-item: BLAZE_ROD
+  production:
+    mobs: {BLAZE: 1}
+    money: 10
+
+magma_cube:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴄᴜʙᴇs ᴅᴇ ᴍᴀɢᴍᴀ"
+  ingredient: spawner:MAGMA_CUBE
+  block: LODESTONE
+  unlock-price: 100000
+  cost-multiplier: 8
+  upgrade-item: MAGMA_CREAM
+  production:
+    mobs: {MAGMA_CUBE: 1}
+    money: 8
+
+guardian:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ɢᴜᴀʀᴅɪᴀɴs"
+  ingredient: spawner:GUARDIAN
+  block: LODESTONE
+  unlock-price: 200000
+  cost-multiplier: 12
+  upgrade-item: PRISMARINE_SHARD
+  production:
+    mobs: {GUARDIAN: 1}
+    money: 12
+
+wither_skeleton:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴡʜɪᴛʜᴇʀ sqᴜᴇʟᴇᴛᴛᴇs"
+  ingredient: spawner:WITHER_SKELETON
+  block: LODESTONE
+  unlock-price: 500000
+  cost-multiplier: 20
+  upgrade-item: COAL
+  production:
+    mobs: {WITHER_SKELETON: 1}
+    money: 20
+
+iron_golem:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ɢᴏʟᴇᴍs ᴅᴇ ғᴇʀ"
+  ingredient: spawner:IRON_GOLEM
+  block: LODESTONE
+  unlock-price: 1000000
+  cost-multiplier: 30
+  upgrade-item: IRON_INGOT
+  production:
+    mobs: {IRON_GOLEM: 1}
+    money: 30

@@ -1,0 +1,152 @@
+# VeltekGenerators
+# Couleurs acceptees partout : &c &l, &#ff8800, #ff8800, <#ff8800>, et MiniMessage (<gradient:#ff8800:#ffd000>texte</gradient>).
+# Durées : 90, 90s, 5m, 1h30m, 2d. Un nombre seul = des secondes.
+
+storage:
+  # sqlite (aucune installation) ou mysql
+  type: sqlite
+  table-prefix: veltekgen_
+  autosave-seconds: 60
+  mysql:
+    host: localhost
+    port: 3306
+    database: veltek
+    username: root
+    password: ""
+    ssl: false
+
+# Le Moteur. "item" pointe vers ton item Nexo ; change l'identifiant s'il est different.
+# Si Nexo ou l'item est absent, la version "fallback" est utilisee (/generateur moteur <joueur>).
+engine:
+  item: "nexo:moteur"
+  fallback:
+    material: HEAVY_CORE
+    name: "&6&lᴍᴏᴛᴇᴜʀ"
+    lore:
+      - "&8ɢᴇɴᴇʀᴀᴛᴇᴜʀ"
+      - ""
+      - "&7Place-le au centre d'une table de craft,"
+      - "&7entouré de 8 ressources identiques."
+
+# Item du générateur dans l'inventaire
+item:
+  name: "{generator}"
+  lore:
+    - "&8ɢᴇɴᴇʀᴀᴛᴇᴜʀ"
+    - ""
+    - "&7• ɴɪᴠᴇᴀᴜ: &e{level}&7/&e{max_level}"
+    - "&7• ᴇᴛᴀᴛ: {state}"
+    - ""
+    - "&6ᴄʟɪᴄᴋ ᴅʀᴏɪᴛ &7→ &ePoser"
+
+# Frequence de mise a jour de la production et des hologrammes
+tick-seconds: 1
+
+limits:
+  per-island: 30            # 0 = illimité
+  per-type-per-island: 10   # 0 = illimité
+  per-player: 0             # utilise seulement sans SuperiorSkyblock2
+
+placement:
+  # Avec SuperiorSkyblock2 : pose interdite hors d'une île
+  require-island: true
+  # Vide = tous les mondes
+  allowed-worlds: []
+
+interaction:
+  # Accroupi + clic droit : récupère le stockage sans ouvrir le menu
+  sneak-collect: true
+  # Il faut etre accroupi pour casser et ramasser un générateur
+  pickup-require-sneak: true
+  pickup-only-owner: false
+  # Le menu se ferme au-delà de cette distance
+  max-menu-distance: 8
+
+delivery:
+  # false : la monnaie attend dans le stockage. true : elle va directement au propriétaire
+  direct-money: false
+  # Avec production.delivery: DROP, plus de production si trop d'items au sol
+  max-nearby-items: 16
+
+upgrade:
+  produce-while-upgrading: true
+
+# Production pendant que le chunk est déchargé ou le serveur éteint.
+# Seuls les items, la monnaie et l'XP stockés en bénéficient, pas les mobs.
+offline:
+  enabled: true
+  max-duration: 12h
+  multiplier: 1.0
+
+mobs:
+  radius: 8
+  # Plus de spawn au-delà de ce nombre de mobs du même type autour du générateur
+  max-nearby: 12
+
+rosestacker:
+  # Fait apparaître mobs et items en piles quand RoseStacker est installe
+  use-stacks: true
+
+essentials:
+  # Coupe la production quand le propriétaire est AFK
+  pause-when-owner-afk: false
+
+hologram:
+  enabled: true
+  y-offset: 0.35
+  # CENTER (suit le joueur), VERTICAL, HORIZONTAL, FIXED
+  billboard: CENTER
+  shadow: true
+  see-through: false
+  scale: 1.0
+  # 1.0 = distance par défaut d'une entite ; baisser allege les grosses iles
+  view-range: 0.5
+  line-width: 200
+  # #AARRGGBB, vide = fond par défaut
+  background: "#40000000"
+  # Chaque générateur peut remplacer ces lignes avec sa propre section hologram
+  lines:
+    locked:
+      - "{generator}"
+      - ""
+      - "&c&lᴠᴇʀʀᴏᴜɪʟʟᴇ"
+      - "&6ᴄʟɪᴄᴋ ᴅʀᴏɪᴛ &7→ &eDévérouiller"
+      - "&e{price}"
+    running:
+      - "{generator}"
+      - ""
+      - "&7• ɴɪᴠᴇᴀᴜ: &e{level}&7/&e{max_level}"
+      - "&7• sᴛᴏᴄᴋ: &e{stored}&7/&e{capacity}"
+      - "&7• ᴘʀᴏᴄʜᴀɪɴ ᴄʏᴄʟᴇ: &e{next_cycle}"
+    full:
+      - "{generator}"
+      - ""
+      - "&7• ɴɪᴠᴇᴀᴜ: &e{level}&7/&e{max_level}"
+      - "&7• sᴛᴏᴄᴋ: &cComplet"
+      - ""
+      - "&6ᴄʟɪᴄᴋ ᴅʀᴏɪᴛ &7→ &eRécupérer"
+    upgrading:
+      - "{generator}"
+      - ""
+      - "&eᴇᴠᴏʟᴜᴛɪᴏɴ ᴇɴ ᴄᴏᴜʀs..."
+      - "{upgrade_bar}"
+      - ""
+      - "&7ᴛᴇᴍᴘs ʀᴇsᴛᴀɴᴛ: &e{remaining}"
+
+format:
+  money: "#,##0.##"
+  currency: "&6{amount}<glyph:dollars1>"
+  bar:
+    size: 20
+    filled: "&e|"
+    empty: "&8|"
+
+# Identifiants de sons Minecraft ou de ton pack ; vide = muet
+sounds:
+  place: block.anvil.place
+  unlock: block.iron_door.open
+  collect: entity.expérience_orb.pickup
+  deposit: entity.item.pickup
+  upgrade-start: block.beacon.activate
+  upgrade-finish: ui.toast.challenge_complete
+  error: block.note_block.bass

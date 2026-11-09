@@ -1,0 +1,111 @@
+# Minerais : le moteur est entouré de la ressource, le générateur produit cette ressource.
+
+coal:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴄʜᴀʀʙᴏɴs"
+  ingredient: COAL
+  block: COAL_ORE
+  unlock-price: 5000
+  cost-multiplier: 2
+  production:
+    items: {COAL: 1}
+    money: 2
+
+copper:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴄᴜɪᴠʀᴇs"
+  ingredient: COPPER_INGOT
+  block: COPPER_ORE
+  unlock-price: 10000
+  cost-multiplier: 3
+  production:
+    items: {COPPER_INGOT: 1}
+    money: 3
+
+iron:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ғᴇʀs"
+  ingredient: IRON_INGOT
+  block: IRON_ORE
+  unlock-price: 25000
+  cost-multiplier: 5
+  production:
+    items: {IRON_INGOT: 1}
+    money: 5
+
+redstone:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ʀᴇᴅsᴛᴏɴᴇ"
+  ingredient: REDSTONE
+  block: REDSTONE_ORE
+  unlock-price: 40000
+  cost-multiplier: 6
+  production:
+    items: {REDSTONE: 1}
+    money: 6
+
+lapis:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ʟᴀᴘɪs ʟᴀᴢᴜʟɪ"
+  ingredient: LAPIS_LAZULI
+  block: LAPIS_ORE
+  unlock-price: 60000
+  cost-multiplier: 7
+  production:
+    items: {LAPIS_LAZULI: 1}
+    money: 7
+
+gold:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴏʀ"
+  ingredient: GOLD_INGOT
+  block: GOLD_ORE
+  unlock-price: 100000
+  cost-multiplier: 10
+  production:
+    items: {GOLD_INGOT: 1}
+    money: 10
+
+quartz:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ qᴜᴀʀᴛᴢ"
+  ingredient: QUARTZ
+  block: NETHER_QUARTZ_ORE
+  unlock-price: 100000
+  cost-multiplier: 10
+  production:
+    items: {QUARTZ: 1}
+    money: 10
+
+amethyst:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴀᴍᴇᴛʜʏsᴛᴇ"
+  ingredient: AMETHYST_SHARD
+  block: AMETHYST_BLOCK
+  unlock-price: 150000
+  cost-multiplier: 12
+  production:
+    items: {AMETHYST_SHARD: 1}
+    money: 12
+
+diamond:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴅɪᴀᴍᴀɴᴛs"
+  ingredient: DIAMOND
+  block: DIAMOND_ORE
+  unlock-price: 500000
+  cost-multiplier: 25
+  production:
+    items: {DIAMOND: 1}
+    money: 25
+
+emerald:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ᴇᴍᴇʀᴀᴜᴅᴇs"
+  ingredient: EMERALD
+  block: EMERALD_ORE
+  unlock-price: 750000
+  cost-multiplier: 30
+  production:
+    items: {EMERALD: 1}
+    money: 30
+
+netherite:
+  name: "&6&lɢᴇɴᴇʀᴀᴛᴇᴜʀ ᴀ ɴᴇᴛʜᴇʀɪᴛᴇ"
+  ingredient: NETHERITE_SCRAP
+  block: ANCIENT_DEBRIS
+  unlock-price: 2500000
+  cost-multiplier: 75
+  production:
+    items: {NETHERITE_SCRAP: 1}
+    money: 75

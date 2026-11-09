@@ -1,0 +1,176 @@
+# Dans un menu, material accepte un item vanilla ou nexo:mon_item.
+# Options d'un item : material, name, lore, amount, glow, item-model, custom-model-data.
+# Un générateur choisit son menu avec "menu: <nom>" (défaut : default).
+#
+# Types : INFO, COLLECT, SELL, START, CLOSE, NONE.
+# Un item NONE peut avoir commands: "[close]", "[player] spawn", "[console] give {player} diamond".
+#
+# Placeholders : {generator} {id} {level} {next_level} {max_level} {owner} {price} {interval}
+# {items_per_cycle} {money_per_cycle} {xp_per_cycle} {next_interval} {next_items_per_cycle}
+# {next_money_per_cycle} {stored} {capacity} {stored_bar} {stored_money} {stored_xp} {next_cycle}
+# {remaining} {upgrade_bar} {upgrade_duration}
+# Une ligne {production} ou {next_production} seule se remplace par la liste des productions.
+menus:
+  default:
+    title: "<shift:-52><glyph:royaume_hotel>"
+    rows: 4
+    fill:
+      material: nexo:air
+      name: ""
+
+    production-format:
+      item: "&8- &f{amount}x {name}"
+      mob: "&8- &f{amount}x {name}"
+      money: "&8- {amount}"
+      xp: "&8- &a{amount} XP"
+
+    # Exigences d'amélioration : les valeurs viennent de profiles.yml
+    requirements:
+      # Emplacements utilises quand une exigence n'a pas de "slot"
+      slots: [11, 12, 13, 14, 15, 20, 21, 22, 23, 24]
+      # Vide = tous les clics
+      deposit-clicks: [RIGHT, SHIFT_RIGHT]
+      done:
+        material: nexo:yess
+        name: "&6&l{requirement}"
+        lore:
+          - "&8ɪɴғᴏʀᴍᴀᴛɪᴏɴs"
+          - ""
+          - "&7• ᴅᴇᴘᴏsᴇ: &e{required}"
+      icons:
+        ITEM:
+          material: "{item}"
+          name: "&6&l{requirement}"
+          lore:
+            - "&8ɪɴғᴏʀᴍᴀᴛɪᴏɴs"
+            - ""
+            - "&7• ᴘʀᴏɢʀᴇssɪᴏɴ: {bar}"
+            - "&7• ᴅᴇᴘᴏsᴇ: &e{deposited}&7/&e{required}"
+            - ""
+            - "&6ᴄʟɪᴄᴋ ᴅʀᴏɪᴛ &7→ &eDéposer"
+        MONEY:
+          material: nexo:dollars
+          name: "&6&l{requirement}"
+          lore:
+            - "&8ɪɴғᴏʀᴍᴀᴛɪᴏɴs"
+            - ""
+            - "&7• ᴘʀᴏɢʀᴇssɪᴏɴ: {bar}"
+            - "&7• ᴅᴇᴘᴏsᴇ: &e{deposited}&7/&e{required}"
+            - ""
+            - "&6ᴄʟɪᴄᴋ ᴅʀᴏɪᴛ &7→ &eDéposer"
+        XP:
+          material: EXPERIENCE_BOTTLE
+          name: "&6&l{requirement}"
+          lore:
+            - "&8ɪɴғᴏʀᴍᴀᴛɪᴏɴs"
+            - ""
+            - "&7• ᴘʀᴏɢʀᴇssɪᴏɴ: {bar}"
+            - "&7• ᴅᴇᴘᴏsᴇ: &e{deposited}&7/&e{required}"
+            - ""
+            - "&6ᴄʟɪᴄᴋ ᴅʀᴏɪᴛ &7→ &eDéposer"
+        PLAYTIME:
+          material: CLOCK
+          name: "&6&l{requirement}"
+          lore:
+            - "&8ɪɴғᴏʀᴍᴀᴛɪᴏɴs"
+            - ""
+            - "&7• ʀᴇqᴜɪs: &e{required}"
+            - ""
+            - "&6ᴄʟɪᴄᴋ ᴅʀᴏɪᴛ &7→ &eValider"
+        STATISTIC:
+          material: BOOK
+          name: "&6&l{requirement}"
+          lore:
+            - "&8ɪɴғᴏʀᴍᴀᴛɪᴏɴs"
+            - ""
+            - "&7• ʀᴇqᴜɪs: &e{required}"
+            - ""
+            - "&6ᴄʟɪᴄᴋ ᴅʀᴏɪᴛ &7→ &eValider"
+        PERMISSION:
+          material: NAME_TAG
+          name: "&6&l{requirement}"
+          lore:
+            - "&8ɪɴғᴏʀᴍᴀᴛɪᴏɴs"
+            - ""
+            - "&6ᴄʟɪᴄᴋ ᴅʀᴏɪᴛ &7→ &eValider"
+        PLACEHOLDER:
+          material: PAPER
+          name: "&6&l{requirement}"
+          lore:
+            - "&8ɪɴғᴏʀᴍᴀᴛɪᴏɴs"
+            - ""
+            - "&7• ʀᴇqᴜɪs: &e{required}"
+            - ""
+            - "&6ᴄʟɪᴄᴋ ᴅʀᴏɪᴛ &7→ &eValider"
+
+    items:
+      info:
+        type: INFO
+        slot: 4
+        material: "{item}"
+        name: "{generator}"
+        lore:
+          - "&8ɪɴғᴏʀᴍᴀᴛɪᴏɴs"
+          - ""
+          - "&7• ɴɪᴠᴇᴀᴜ: &e{level}&7/&e{max_level}"
+          - "&7• ᴘʀᴏᴘʀɪᴇᴛᴀɪʀᴇ: &e{owner}"
+          - ""
+          - "&eɴɪᴠᴇᴀᴜ ᴀᴄᴛᴜᴇʟ: &7(&e{interval}&7)"
+          - "{production}"
+          - ""
+          - "&eᴘʀᴏᴄʜᴀɪɴ ɴɪᴠᴇᴀᴜ: &7(&e{next_interval}&7)"
+          - "{next_production}"
+      storage:
+        type: COLLECT
+        slot: 27
+        material: nexo:shop
+        name: "&6&lʀᴇᴄᴜᴘᴇʀᴇʀ"
+        lore:
+          - "&8ɪɴғᴏʀᴍᴀᴛɪᴏɴs"
+          - ""
+          - "{stored_bar}"
+          - ""
+          - "&7• sᴛᴏᴄᴋ: &e{stored}&7/&e{capacity}"
+          - "&7• ᴍᴏɴɴᴀɪᴇ: {stored_money}"
+          - "&7• ᴇxᴘᴇʀɪᴇɴᴄᴇ: &e{stored_xp}"
+          - ""
+          - "&6ᴄʟɪᴄᴋ ɢᴀᴜᴄʜᴇ &7→ &eRécupérer"
+      start:
+        type: START
+        slot: 31
+        waiting:
+          material: nexo:up
+          name: "&6&lʟᴀɴᴄᴇʀ ʟ'ᴇᴠᴏʟᴜᴛɪᴏɴ"
+          lore:
+            - "&8ɪɴғᴏʀᴍᴀᴛɪᴏɴs"
+            - ""
+            - "&cDépose toutes les ressources d'abord."
+            - ""
+            - "&7• ᴅᴜʀᴇᴇ: &e{upgrade_duration}"
+        ready:
+          material: nexo:yess
+          name: "&6&lʟᴀɴᴄᴇʀ ʟ'ᴇᴠᴏʟᴜᴛɪᴏɴ"
+          glow: true
+          lore:
+            - "&8ɪɴғᴏʀᴍᴀᴛɪᴏɴs"
+            - ""
+            - "&7• ᴅᴜʀᴇᴇ: &e{upgrade_duration}"
+            - ""
+            - "&6ᴄʟɪᴄᴋ ᴅʀᴏɪᴛ &7→ &eLancer"
+        upgrading:
+          material: nexo:clock
+          name: "&e&lᴇᴠᴏʟᴜᴛɪᴏɴ ᴇɴ ᴄᴏᴜʀs..."
+          lore:
+            - "&8ɪɴғᴏʀᴍᴀᴛɪᴏɴs"
+            - ""
+            - "{upgrade_bar}"
+            - "&7• ᴛᴇᴍᴘs ʀᴇsᴛᴀɴᴛ: &e{remaining}"
+        max:
+          material: nexo:shield
+          name: "&6&lɴɪᴠᴇᴀᴜ ᴍᴀxɪᴍᴜᴍ"
+          glow: true
+      close:
+        type: CLOSE
+        slot: 35
+        material: nexo:non
+        name: "&c&lғᴇʀᴍᴇʀ"

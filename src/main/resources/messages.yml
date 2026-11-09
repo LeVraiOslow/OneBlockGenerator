@@ -1,0 +1,53 @@
+prefix: "&#E87833&lɪᴠᴀʟᴏɴᴀ &7» "
+
+placed: "{generator} &eposé. &6ᴄʟɪᴄᴋ ᴅʀᴏɪᴛ &epour le déverrouiller."
+unlocked: "{generator} &6déverrouillé &epour &6{price}&e."
+unlock-no-money: "&cIl te faut &6{price} &cpour déverrouiller ce générateur."
+no-economy: "&cAucune économie n'est disponible."
+not-member: "&cCe générateur n'appartient pas à ton île."
+unknown-type: "&cCe type de générateur n'existe plus."
+cannot-place-here: "&cTu ne peux pas poser de générateur ici."
+must-be-on-island: "&cPose ton générateur sur ton île."
+limit-reached: "&cLimite atteinte : {limit} générateurs."
+
+collected: "&eVous venez de récupérer &6{items} items&e, &6{money}&e et &6{xp} niveaux&e."
+collected-partial: "&cInventaire plein. Récupéré : &6{items} items&e, &6{money}&e et &6{xp} niveaux&e."
+collect-empty: "&cVous n'avez rien à récupérer."
+inventory-full: "&cTon inventaire est plein."
+sold: "&f{items} &aitems vendus pour {money}&a."
+sell-nothing: "&7Aucun item du stock n'a de prix de vente."
+sell-unavailable: "&cLa vente n'est pas disponible."
+
+requirement-missing: "&cIl te manque : &f{requirement}"
+upgrade-started: "{generator} &7évolue pendant &f{duration}&7."
+upgrade-finished: "{generator} &aest passé au niveau &f{level}&a !"
+
+pickup-sneak: "&7Accroupis-toi pour ramasser le générateur."
+pickup-owner-only: "&cSeul le propriétaire peut ramasser ce générateur."
+pickup-upgrading: "&cImpossible de ramasser un générateur en évolution."
+
+reloaded: "&eConfiguration rechargée : &6{count} &6générateurs&e."
+given: "&f{amount}x {generator} &adonné à &f{player}&a."
+level-set: "&aNiveau réglé sur &f{level}&a."
+players-only: "&cCommande réservée aux joueurs."
+no-target: "&cRegarde un générateur."
+
+item-state:
+  locked: "&cᴠᴇʀʀᴏᴜɪʟʟᴇ"
+  unlocked: "&aᴅᴇᴠᴇʀʀᴏᴜɪʟʟᴇ"
+
+requirement-labels:
+  MONEY: "&6&lᴍᴏɴɴᴀɪᴇ"
+  XP: "&6&lɴɪᴠᴇᴀᴜx"
+  PLAYTIME: "&6&lᴛᴇᴍᴘs ᴅᴇ ᴊᴇᴜ"
+  STATISTIC: "&6&lsᴛᴀᴛɪsᴛqᴜᴇs"
+  PERMISSION: "&6&lᴘᴇʀᴍɪssɪᴏɴ"
+  PLACEHOLDER: "&6&lᴄᴏɴᴅɪᴛɪᴏɴ"
+
+help:
+  - "&6/generateur give <joueur> <type> [quantite] [niveau]"
+  - "&6/generateur moteur <joueur> [quantite]"
+  - "&6/generateur list &7- types disponibles"
+  - "&6/generateur info &7- générateur regarde"
+  - "&6/generateur setlevel <niveau> &7- générateur regarde"
+  - "&6/generateur reload"
